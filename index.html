@@ -189,8 +189,19 @@
 <footer>
 <h3>Contact Us</h3>
 <form method="post" action="https://wp.zybooks.com/form-viewer.php"></form>
-First Name (Enter first name)
-Last Name (Enter last name)
+<label for="First Name">Name<span>*</span></label>
+<input type="text" name="First Name" id="First Name" autocomplete="given-name" required>
+<label for="Last Name"> Last Name<span>*</span></label>
+<input type="text" name="Last Name" id="Last Name" autocomplete="family-name" required>
+
+<fieldset>
+  <legend>Contact Method<span>*</span></legend>
+  <input id="phone" type="radio" name="contact method" value="phone" checked>
+  <label class="radio-label" for="phonenumber">Phone</label>
+  <input id="email" type="radio" name contact method value="email" checked>
+  <label class="radio-label" for="emailid">Email</label>
+</fieldsetf>
+
 
 Contact Method (Email, Text, Phone)
 Email Address (Enter Email)
