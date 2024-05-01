@@ -6,7 +6,9 @@
          <meta name="author" content="Krupa Kapadia">
          <meta name="keywords" content="HTMl, CSS, XML, Javascript">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title> Wunderlust Travel </title>
     </head>
+
     <body> 
         <header>
             <a href="#main-content" id="skiplink"> Skip to main content </a>
@@ -23,17 +25,18 @@
                 <li><a href="#Destinations"> Destinations </a></li>
                 <li><a href="#Inspirations"> Inspirations </a></li>
                 <li><a href="#Special"> Special </a></li>
-                <li><a href="#Contact Us"> Contact Us </a></li>
+                <li><a href="#ContactUs"> Contact Us </a></li>
             </ul>
         </nav>
         </header>
+
         <main id="main-content">
             <h2>Majorca</h2>
             <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
-            <pictuere>
-            <source media="(max-width:320px)" srcset="images/majorca-beach-S">
-            <source media="(max-width:780px)" srcset="images/majorca-beach-M">
-            <source media="(min-width:1024px)" srcset="images/majorca-beach-L">
+            <picture>
+            <source media="(max-width:320px)" srcset="images/majorca-beach-S.png">
+            <source media="(max-width:780px)" srcset="images/majorca-beach-M.png">
+            <source media="(min-width:1024px)" srcset="images/majorca-beach-L.png">
             <img src="images/majorca-beach-L.png" alt="beach image">
             </picture>
 
@@ -50,9 +53,11 @@
               <source media="(max-width:1024px)" srcset="images/majorca-cove-L.png">
             <img src="images/majorca-cove-L.png" alt="cove image">
             </picture>
+
     <section>
         <h3>Plan Your Trip</h3>
     </section>
+
     <section>
     <h4>How to Get there</h4>
 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plane" width="150" height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -66,6 +71,7 @@
 </svg>
 </a>
 </section>
+
 <section>
 <h4>Places to Stay</h4>
 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bed" width="150" height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -80,6 +86,7 @@
 </svg>
 </a>
 </section>
+
 <section>
 <h4>Things to do</h4>
 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sailboat" width="150" height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -96,6 +103,7 @@
 </svg>
 </a>
 </section>
+
 <section>
     <h4>Where to Eat</h4>
 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tools-kitchen-2" width="150" height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -109,9 +117,11 @@
 </svg>
 </a>
 </section>
+
 <section>
     <h3>Testimonials</h3>
     </section>
+
         <section>
         <h4>Miranda Blake</h4>
         <picture>
@@ -215,13 +225,17 @@
 
 <p>Population: 923,608</p>
 </section>
+</main>
+</body>
+
+<footer>
 
 <h3>Contact Us</h3>
 <form method="post" action="https://wp.zybooks.com/form-viewer.php">
-<label for="First Name">Name<span>*</span></label>
-<input type="text" name="First Name" id="First Name" autocomplete="given-name" required> 
-<label for="Last Name"> Last Name<span>*</span></label>
-<input type="text" name="Last Name" id="Last Name" autocomplete="family-name" required>
+<label for="FirstName">Name<span>*</span></label>
+<input type="text" name="First Name" id="FirstName" autocomplete="given-name" required> 
+<label for="LastName"> Last Name<span>*</span></label>
+<input type="text" name="Last Name" id="LastName" autocomplete="family-name" required>
 
 <fieldset>
   <legend>Contact Method<span>*</span></legend>
@@ -240,7 +254,7 @@
 <br>
 <label for="city">Destinations<span>*</span></label>
 <select id="city" name="destination" required>
-<option value=>Choose an Option</option>
+<option value="">Choose an Option</option>
 <option value="Barcelona">Barcelona</option>
 <option value="Granada">Granada</option>
 <option value="Ibiza">Ibiza</option>
@@ -263,10 +277,7 @@
 <br>
 <input type="submit" name="submit" value="Submit">
 </form>
-</main>
-</body>
 
-<footer>
 <p> Copyright 2021 Wunderlust Travel</p>
 <a href="#"> Privacy Statement</a>
 <a href="#"> Terms of Service</a>
