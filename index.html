@@ -25,7 +25,12 @@
         <main id="main-content">
             <h2>Majorca</h2>
             <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
-            <img src="majorca-waves.png" alt="waves image">
+            <source media="(max-width:320px)" srcset="images/majorca-beach-S.png">
+            <source media="(max-width:780px)" srcset="images/majorca-beach-M.png">
+            <source media="(min-width:781px)" srcset="images/majorca-beach-L.png">
+
+            <img src="images/majorca-beach-L.png" alt="waves image">
+
             <img src="majorca-beach.png" alt="beach image">
             <img src="majorca-cove.png" alt="cove image">
     <section>
@@ -176,7 +181,7 @@
 <h3>Contact Us</h3>
 <form method="post" action="https://wp.zybooks.com/form-viewer.php">
 <label for="First Name">Name<span>*</span></label>
-<input type="text" name="First Name" id="First Name" autocomplete="given-name" required>
+<input type="text" name="First Name" id="First Name" autocomplete="given-name" required> 
 <label for="Last Name"> Last Name<span>*</span></label>
 <input type="text" name="Last Name" id="Last Name" autocomplete="family-name" required>
 
