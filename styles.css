@@ -73,7 +73,6 @@ header {
   padding: 20px;
   text-align: left;
   min-height: 100px;
-  max-width: 428px
 }
 
 /* Logo */
@@ -168,12 +167,14 @@ header p {
 /* Responsive styles for tablet and desktop */
 @media (min-width: 768px) {
   #menu-toggle {
-    display: flex;
+    display: grid;
+    grid:1fr;
     align-items: center;
   }
 
   #menu-toggle ul {
-    display: flex;
+    display: grid;
+    grid:1fr;
   }
 
   #menu-toggle ul li {
@@ -205,7 +206,7 @@ header p {
     grid: 1fr;
     justify-content: space-around;
     align-items: flex-start;
-  max-width: 428px
+
 }
 
 #intro > div {
@@ -506,7 +507,7 @@ form input[type="radio"] {
     margin-right: 5px;
 }
 
-.radio-control::before {
+.radio-control:before {
     content: '';
     width: 10px;
     height: 10px;
@@ -552,7 +553,6 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-
 
 
 /* Small Screen Styles */
@@ -965,6 +965,7 @@ footer a:hover {
 
     #img-grid img {
         margin-bottom: 30px;
+        grid: 1fr 1fr 1fr 1fr;
     }
 
     /* Plan Your Trip Styles */
@@ -1060,6 +1061,7 @@ footer a:hover {
         margin-bottom: 20px;
         margin-left: 20px;
         margin-right: 20px;
+        grid: 1fr 1fr 1fr 1fr;
     }
 
     /* Contact Form Styles */
@@ -1079,7 +1081,7 @@ footer a:hover {
     form textarea,
     form select,
     form input[type="submit"] {
-        width: 80%;
+        width: 33%;
     }
 
     form input[type="submit"] {
@@ -1089,7 +1091,8 @@ footer a:hover {
     .form-row > label,
     .form-row > input,
     .form-row > select {
-        flex-basis: 80%;
+        grid: 1fr 1fr 1fr;
+      columns:3;
     }
 
     /* Footer Styles */
