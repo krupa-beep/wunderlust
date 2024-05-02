@@ -47,3 +47,47 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* Global styles */
+:root {
+--fonts:Montserrat, sans-serif;
+--yellow:#F6D64A;
+--teal:#55BCD5;
+--purple:#9B26B0;
+--blue:#499BD2;
+--dark-grey:#222222;
+--light-grey:#EAEAEA;
+--white:#FFFFFF;
+--black:#000000;
+}
+
+
+/* Header */
+header {
+  display: grid;
+  grid: 1fr;
+  align-items: center;
+  background: linear-gradient(5deg, rgba(255, 255, 255, 1) 0%, rgba(85, 188, 213, 1) 100%);
+  color: #000000;
+  padding: 20px;
+  text-align: left;
+  min-height: 100px;
+}
+
+/* Logo */
+#logo {
+ grid: 1fr 1fr 1fr;
+}
+
+#logo img {
+max-width:100%;
+height:auto;
+}
+
+/* Header Content */
+#header-content {
+  flex: 1;
+  margin: 0 20px; 
+  text-align: center; 
+}
+
