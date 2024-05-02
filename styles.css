@@ -766,7 +766,11 @@ footer a:hover {
 
     /* Navigation Styles */
     nav a {
-        padding: 8px;
+        padding: 10px;
+        font-size: 22px;
+        position:top left;
+        grid: 1fr 1fr;
+        max-width: 50%;
     }
 
     /* Intro Section Styles */
